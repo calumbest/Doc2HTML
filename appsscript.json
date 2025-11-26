@@ -1,0 +1,42 @@
+{
+  "timeZone": "America/New_York",
+  "dependencies": {
+    "enabledAdvancedServices": [
+      {
+        "userSymbol": "Docs",
+        "version": "v1",
+        "serviceId": "docs"
+      },
+      {
+        "userSymbol": "Drive",
+        "version": "v2",
+        "serviceId": "drive"
+      }
+    ]
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/documents",
+    "https://www.googleapis.com/auth/script.container.ui",
+    "https://www.googleapis.com/auth/documents.currentonly",
+    "https://www.googleapis.com/auth/drive",
+    "https://www.googleapis.com/auth/drive.file"
+  ],
+  "addOns": {
+    "common": {
+      "name": "Doc2HTML",
+      "logoUrl": "https://drive.google.com/uc?export=download&id=1UQACwBC-JUC1cI_0bMlpHYWn0t5LfFEr",
+      "layoutProperties": {
+        "primaryColor": "#4285f4",
+        "secondaryColor": "#0F9D58"
+      }
+    },
+    "docs": {
+      "homepageTrigger": {
+        "runFunction": "onHomePage",
+        "enabled": true
+      }
+    }
+  },
+  "runtimeVersion": "V8"
+}
